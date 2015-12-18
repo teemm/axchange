@@ -1,0 +1,14 @@
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	background: #3cb8dc;
+}
+.navbar-default{
+	border-color: #3cb8dc;
+	background: #3cb8dc;
+}
+.navbar{
+	border-radius: 0px;
+}
+.navbar-nav>li>a{
+	padding-right: 40px;
+}
