@@ -19,6 +19,13 @@
 body{
 	background: #EFEEEE;
 }
+.transition{
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;	
+}
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form{
 	background: #3cb8dc;
@@ -278,7 +285,53 @@ section > div > ul > li{
 	font-size: 16px;
 	font-family: 'bpg_arial';
 }
-.fullNewContent{
-
-
+.rightContent{
+	height: 100%;
+}
+.rightContent .formblock{
+	height: 474px;
+}
+.rightContent .formblock p{
+	width: 305px;
+}
+.registerform{
+	padding-top: 50px !important;
+}
+.loginform{
+	width: 305px;
+	margin: 8px auto 0  auto;
+	padding:150px 0 0 0;
+}
+.loginform p span{
+	width: 44px;
+	height: 42px;
+ 	border-radius: 5px 0 0 5px;
+	background: #3CB8DC;
+	vertical-align: middle;
+	display: inline-block;
+	font-size: 22px;
+	line-height: 42px;
+	text-align: center;
+	color: #EAEAEA;
+}
+.loginform p > input.textinpt{
+	width: 250px;
+	border-radius: 0 5px 5px 0px;
+}
+.loginform p > input{
+	display: inline-block;
+	vertical-align: middle;
+	
+	height: 42px;
+	padding: 5px;
+}
+.submitbutton{
+	width: 295px;
+	background: #3CB8DC;
+	color: #fff;
+	display: inline-block;
+	border-radius: 5px;
+}
+.submitbutton:hover{
+	background: #63C5E3;
 }
