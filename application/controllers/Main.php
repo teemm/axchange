@@ -39,5 +39,6 @@ class Main extends CI_Controller {
 			$this->load->model('users');
 			$this->users->register();
 		}
+
 	}	
 }

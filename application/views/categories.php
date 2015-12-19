@@ -1,4 +1,5 @@
  <div class="leftMenu">
+ <div class="cadegoryleft">კატეგორიები</div>
         <ul>
           <?php foreach ($categories as $list):?>
           <li>
@@ -6,7 +7,7 @@
             <?php if(isset($list['children'])>0): ?>
             <ul class="hidelist">
             <?php foreach ($list['children'] as $child):?>
-              <li><a href="<?php echo site_url('subcat/'.$child['subId']); ?>"><?php echo $child['subcatName']; ?></a></li>
+              <li class="childlists"><a class="childa" href="<?php echo site_url('subcat/'.$child['subId']); ?>"><?php echo $child['subcatName']; ?></a></li>
              <?php endforeach; ?>
             </ul>
           <?php endif; ?>
