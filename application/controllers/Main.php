@@ -5,10 +5,12 @@ class Main extends CI_Controller {
 	public function index()
 	{
 		$this->load->model('Welcome');
-		$data['menu']=$this->Welcome->menu();
+		$data['menus']=$this->Welcome->menu();
 		$data['categories']=$this->Welcome->categories();
-		//$this->search();
-		$this->fullView();
+		$this->load->view('header',$data);
+		$this->load->view('navbar');
+		$this->load->view('main');
+		$this->load->view('footer');
 	}
 	public function search(){
 		$this->load->model('Welcome');

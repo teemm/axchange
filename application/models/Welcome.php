@@ -9,7 +9,7 @@ class Welcome extends CI_Model{
 		$this->db->select('categories.name as catName,categories.id as catId');
 		$rows=$this->db->get('categories')->result_array();
 
-		$this->db->select('sub_category.name as subcatName,sub_category.parent as parent');
+		$this->db->select('sub_category.id as subId,sub_category.name as subcatName,sub_category.parent as parent');
 		$rows2=$this->db->get('sub_category')->result_array();		
 
 		foreach ($rows as $key => $value) {
@@ -23,10 +23,9 @@ class Welcome extends CI_Model{
 		return $rows;
 	}
 	public function search(){
-		//$this->db->input('search');
 		$this->db->select('swaps.id as swapsId,title,contact,status,state,wantstuff,vip,add_date,img_url');
-		$this->db->like('title','ული','both');
-		$this->db->join('swapimages','swapimages.swap_id=swaps.id');
+		$this->db->like('title',$this->input->post('search'));
+		$this->db->join('swapimages','swapimages.swap_id=swaps.id','left');
 		return $this->db->get('swaps')->result_array();	
 	}
 	public function fullView(){
