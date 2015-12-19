@@ -1,9 +1,11 @@
+
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
       <?php foreach ($menus as $list): ?>
+<<<<<<< HEAD
           <?php if($this->session->userSwap && ($list['eng_name']=='register' || $list['eng_name']=='login'))continue; ?>
             <li><a href="<?php echo base_url('pages/'.$list['eng_name']); ?>"><span class="circle"></span> <?php echo $list['name']; ?> </a></li>     
           <?php endforeach; ?>
@@ -17,6 +19,10 @@
               </ul>
             </li>
           <?php endif; ?>            
+=======
+        <li><a href="<?php echo site_url('pages/'.$list['eng_name']); ?>"><span class="circle"></span><span data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" ><?php echo $list['name']; ?></span> </a></li>
+      <?php endforeach; ?>
+>>>>>>> 176f00fcb41ff16aaa8674465a2e2245f50a4493
       </ul>
     </div><!-- /.navbar-collapse -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

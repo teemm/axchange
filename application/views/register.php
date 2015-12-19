@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php ($this->session->flashdata('error_signin'))?$error='1':$error=''; ?>
 <div class="registration">
 	<form action="<?php echo base_url('Registration/Chackregister'); ?>" method="post">
@@ -9,3 +10,6 @@
 		<p><input type="submit" class="submitSend" value="რეგისტრაცია" /></p>
 	</form>
 </div>
+=======
+<form action="<?php echo site_url('Main/'); ?>"</form>
+>>>>>>> 176f00fcb41ff16aaa8674465a2e2245f50a4493
