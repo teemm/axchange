@@ -12,7 +12,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/font-awesome.min.css'); ?> ">
   <script src="<?php echo base_url('/assets/js/jquery-2.1.4.min.js'); ?>"></script>
 	<script src="<?php echo base_url('/assets/js/bootstrap.min.js'); ?>"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -60,14 +59,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="col-md-4 navigation">
      <section class="container leftMenu">
         <ul>
-          <li><i class="fa fa-book"></i><a href="">წიგნები</a></li>
-          <li><i class="fa fa-book"></i><a href="">ტანსაცმელი</a></li>
-          <li><i class="fa fa-book"></i><a href="">კომპ.აქსესუარები</a></li>
-          <li><i class="fa fa-diamond"></i><a href="">ძვირფასი ნივთები</a></li>
-          <li><i class="fa fa-gamepad"></i><a href="">ვიდეო თამაშები</a></li>
-          <li><i class="fa fa-book"></i><a href="">ავეჯი ჭურჭელი</a></li>
-          <li><i class="fa fa-book"></i><a href="">ანტიკვარიატი</a></li>
-          <li><i class="fa fa-book"></i><a href="">მანქანები</a></li>
+          <li><span class="book-sp"></span><a href="">წიგნები</a></li>
+          <li><span class="clotes"></span></i><a href="">ტანსაცმელი</a></li>
+          <li><span class="komp"></span></i><a href="">კომპ.აქსესუარები</a></li>
+          <li><span class="javel"></span><a href="">ძვირფასი ნივთები</a></li>
+          <li><span class="game"></span><a href="">ვიდეო თამაშები</a></li>
+          <li><span class="aveji"></span><a href="">ავეჯი ჭურჭელი</a></li>
+          <li><span class="antikvariati"></span><a href="">ანტიკვარიატი</a></li>
         </ul>
       </div>
     </section>

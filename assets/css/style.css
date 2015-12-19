@@ -74,11 +74,11 @@
 }
 .caret{
 	margin-left: 5px;
-	/*background: url('../../assets/iamges/svg/down.svg');*/
+	background: url('../../assets/images/svg/down.svg');
 }
 .dropdown-menu{
-		font-family: 'bpg_arial';
-		outline: none;
+	font-family: 'bpg_arial';
+	outline: none;
 }
 .searchin{
 	border: 5px;
@@ -138,10 +138,67 @@ section > ul > li > i{
 	margin-right: 20px;
 }
 section > ul > li > i > a{
-
+	display: inline-block;
+	vertical-align: middle;
 }
 section > ul > li{
 	margin-top: 10px;
 	font-family: 'bpg_arial';
 	font-size: 18px;
+}
+.book-sp{
+	background: url('../../assets/images/svg/book.svg') no-repeat;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+.clotes{
+	background: url('../../assets/images/svg/clotes.svg') no-repeat;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;	
+}
+.komp{
+	background: url('../../assets/images/svg/komp.svg') no-repeat;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;	
+}
+.javel{
+	background: url('../../assets/images/svg/javel.svg') no-repeat;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;	
+}
+.game{
+	background: url('../../assets/images/svg/game.svg') no-repeat;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;	
+}
+.aveji{
+	background: url('../../assets/images/svg/aveji.svg') no-repeat;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;	
+}
+.antikvariati{
+	background: url('../../assets/images/svg/antikvariati.svg') no-repeat;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20px;	
 }
