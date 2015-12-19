@@ -4,8 +4,19 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
       <?php foreach ($menus as $list): ?>
-        <li><a href="<?php echo site_url('pages/'.$list['eng_name']); ?>"><span class="circle"></span> <?php echo $list['name']; ?> </a></li>
-      <?php endforeach; ?>
+          <?php if($this->session->userSwap && ($list['eng_name']=='register' || $list['eng_name']=='login'))continue; ?>
+            <li><a href="<?php echo base_url('pages/'.$list['eng_name']); ?>"><span class="circle"></span> <?php echo $list['name']; ?> </a></li>     
+          <?php endforeach; ?>
+          <?php if($this->session->userSwap): ?>
+            <li>
+              <button class="dropdown-toggle md-select" type="button" data-toggle="dropdown"><span class="circle"></span>ჩემი პროფილი
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="<?php echo base_url('myprofile'); ?>">ჩემი პროფილი</a></li>
+                <li><a href="<?php echo base_url('Registration/logout') ?>">გამოსვლა</a></li>
+              </ul>
+            </li>
+          <?php endif; ?>            
       </ul>
     </div><!-- /.navbar-collapse -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

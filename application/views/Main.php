@@ -10,8 +10,16 @@
     <section class="col-md-8 rightMenu rightContent">
       <div class="content-r">
           <?php 
+            if($this->uri->segment(2)=='register'){
+              $this->load->view('register');
+            }
+            else if($this->uri->segment(2)=='login'){
+              $this->load->view('login');
+            }
+            else{
               $this->load->view('vip');
-              $this->load->view('newsposts');
+              $this->load->view('newsposts');              
+            }
            ?>
       </div>  
     </section>
