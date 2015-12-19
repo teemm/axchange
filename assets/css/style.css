@@ -22,7 +22,13 @@ body{
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form{
 	background: #3cb8dc;
-	margin-right: 40px;
+	margin-right: 0px;
+	padding-right: 15px;
+    padding-left: 15px;
+    overflow-x: visible
+}
+.navbar-right{
+	margin-right: -30px;
 }
 .navbar-default{
 	border-color: #3cb8dc;
