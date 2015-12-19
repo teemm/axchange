@@ -1,6 +1,6 @@
-
+	<h1 class="text-center viH">VIP განცხადებები</h1>
 	<div class="vip-cl">
-		<h1 class="text-center">VIP განცხადებები</h1>
+		
 			<div class="vip-images">
 					<div class="inline">
 						<p class="fix">

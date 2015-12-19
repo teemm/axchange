@@ -274,7 +274,6 @@ section > div > ul > li{
 	border-radius: 5px;
 }
 .new-images{
-	width: 22%;
 	display: inline-block;
 	margin-left: 2%;
 	margin-top: 5%;
@@ -338,16 +337,46 @@ section > div > ul > li{
 	width: 30%;
 	margin: 10px;
 }
+.inline1{
+	display: inline-block;
+    width: 21%;
+    margin: 10px;
+}
 .vipimg{
 	width: 100%;
 	height: auto;
 	vertical-align: middle;
 	
 }
+.viH{
+	padding-top: 10px;
+}
 .fix{
 	height: 220px;
 	width: 221px;
 	/*border: 1px solid gray;*/
-	outline: 1px solid gray;
+	outline: 1px solid #E1E1E1;
+	line-height: 220px;
+}
+.fix1{
+	position: relative;
+	height: 150px;
+	width: 150px;
+	/*border: 1px solid gray;*/
+	outline: 1px solid #E1E1E1;
+	line-height: 150px;
+}
+.hoverNews{
+	position: absolute;
+	width: 150px;
+	height: 150px;
 
+}
+.img-thumbnail{
+	border: 0px;
+}
+.navbar-brand{
+	position: absolute;
+	width: 100px;
+	height: 100px;
 }
