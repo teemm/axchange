@@ -2,7 +2,7 @@
 <nav class="navbar navbar-default">
   <div class="container">
    
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="<?php echo base_url(''); ?>">
         <img alt="Brand" src="<?php echo base_url('assets/images/svg/logo.svg'); ?>">
       </a>
     
@@ -49,3 +49,5 @@
     </div>
   </div><!-- /.container-fluid -->
 </nav>
+<div class="container">
+  <div class="row">

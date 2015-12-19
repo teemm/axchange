@@ -1,92 +1,16 @@
        <h1 class="text-center">ახალი დამატებულები</h1>
         <div class="new-cl">
-	         
-		        <div class="new-images">
-			        <div class="inline1">
-						<p class="fix1">
-							<a href="">
-								<img src="<?php echo base_url('assets/images/swaps/1.jpg'); ?>" alt="..." class="img-thumbnail">
-							</a>
-						</p>
-						<h2 class="newTitle">unchage - 3 დისკი</h2>
-						<p class="vipPar"> გაიცლვება - last of რაღაცის დისკში </p>
-					</div>
-
-					<div class="inline1">
-						<p class="fix1">
-							<a href="">
-								<img src="<?php echo base_url('assets/images/swaps/1.jpg'); ?>" alt="..." class="img-thumbnail">
-							</a>
-						</p>
-						<h2 class="newTitle">unchage - 3 დისკი</h2>
-						<p class="vipPar"> გაიცლვება - last of რაღაცის დისკში </p>
-					</div>
-		
-					<div class="inline1">
-						<p class="fix1">
-							<a href="">
-								<img src="<?php echo base_url('assets/images/swaps/1.jpg'); ?>" alt="..." class="img-thumbnail">
-							</a>
-						</p>
-						<h2 class="newTitle">unchage - 3 დისკი</h2>
-						<p class="vipPar"> გაიცლვება - last of რაღაცის დისკში </p>
-					</div>
-
-					<div class="inline1">
-						<p class="fix1">
-							<a href="">
-								<img src="<?php echo base_url('assets/images/swaps/1.jpg'); ?>" alt="..." class="img-thumbnail">
-							</a>
-						</p>
-						<h2 class="newTitle">unchage - 3 დისკი</h2>
-						<p class="vipPar"> გაიცლვება - last of რაღაცის დისკში </p>
-					</div>
-
+	        <div class="new-images">
+	        	<?php foreach ($newswaps as $value):?>
+		        <div class="inline1">
+					<p class="fix1">
+						<a href="<?php echo base_url('swap/'.$value['swapId']); ?>"><img src="<?php echo base_url('assets/images/swaps/'.$value['image']); ?>" alt="..." class="img-thumbnail"></a>
+					</p>
+					<h2 class="newTitle"><?php echo $value['title']; ?></h2>
+					<p class="vipPar"><?php echo $value['wantstuff']; ?></p>
 				</div>
-
-
-				<div class="new-images">
-			        <div class="inline1">
-						<p class="fix1">
-							<a href="">
-								<img src="<?php echo base_url('assets/images/swaps/3.jpg'); ?>" alt="..." class="img-thumbnail">
-							</a>
-						</p>
-						<h2 class="newTitle">unchage - 3 დისკი</h2>
-						<p class="vipPar"> გაიცლვება - last of რაღაცის დისკში </p>
-					</div>
-
-					<div class="inline1">
-						<p class="fix1">
-							<a href="">
-								<img src="<?php echo base_url('assets/images/swaps/2.jpg'); ?>" alt="..." class="img-thumbnail">
-							</a>
-						</p>
-						<h2 class="newTitle">unchage - 3 დისკი</h2>
-						<p class="vipPar"> გაიცლვება - last of რაღაცის დისკში </p>
-					</div>
-		
-					<div class="inline1">
-						<p class="fix1">
-							<a href="">
-								<img src="<?php echo base_url('assets/images/swaps/1.jpg'); ?>" alt="..." class="img-thumbnail">
-							</a>
-						</p>
-						<h2 class="newTitle">unchage - 3 დისკი</h2>
-						<p class="vipPar"> გაიცლვება - last of რაღაცის დისკში </p>
-					</div>
-
-					<div class="inline1">
-						<p class="fix1">
-							<a href="">
-								<img src="<?php echo base_url('assets/images/swaps/1.jpg'); ?>" alt="..." class="img-thumbnail">
-							</a>
-						</p>
-						<h2 class="newTitle">unchage - 3 დისკი</h2>
-						<p class="vipPar"> გაიცლვება - last of რაღაცის დისკში </p>
-					</div>
-
-				</div>
-		
+				<?php endforeach; ?>
+			</div>
         </div>
-
+  </div>
+</section>

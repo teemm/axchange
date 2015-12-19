@@ -7,17 +7,30 @@ class Main extends CI_Controller {
 		$this->load->model('Welcome');
 		$data['menus']=$this->Welcome->menu();
 		$data['categories']=$this->Welcome->categories();
+		$this->load->model('Swaps');
+		$data['vipswaps']=$this->Swaps->vipswaps();		
+		$data['newswaps']=$this->Swaps->newswaps();
 		$this->load->view('header',$data);
 		$this->load->view('navbar');
-		$this->load->view('main');
+		$this->load->view('categories');
+		$this->load->view('vip');
+		$this->load->view('newsposts');  
 		$this->load->view('footer');
 	}
 	public function search(){
 		$this->load->model('Welcome');
 		print_r($data['search']=$this->Welcome->search());
 	}
-	public function fullView(){
+	public function fullView($swapId){
+		$this->load->model('Swaps');
 		$this->load->model('Welcome');
-		print_r($this->Welcome->fullView());
+		$data['fullswap']=$this->Swaps->fullView($swapId);
+		$data['menus']=$this->Welcome->menu();
+		$data['categories']=$this->Welcome->categories();
+		$this->load->view('header',$data);
+		$this->load->view('navbar');
+		$this->load->view('categories');
+		$this->load->view('fullView'); 
+		$this->load->view('footer');		
 	}
 }

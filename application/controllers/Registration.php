@@ -35,8 +35,19 @@ class Registration extends CI_Controller {
 		$data['categories']=$this->Welcome->categories();	
 		$this->load->view('header',$data);
 		$this->load->view('navbar');
-		$this->load->view('main');
+		$this->load->view('categories');
+		$this->load->view('register');
 		$this->load->view('footer');			
+	}
+	public function login(){
+		$this->load->model('Welcome');
+		$data['menus']=$this->Welcome->menu();
+		$data['categories']=$this->Welcome->categories();	
+		$this->load->view('header',$data);
+		$this->load->view('navbar');
+		$this->load->view('categories');
+		$this->load->view('login');
+		$this->load->view('footer');		
 	}
 	public function logout(){
 		$this->session->sess_destroy();

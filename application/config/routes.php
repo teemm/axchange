@@ -53,7 +53,8 @@ $route['default_controller'] = 'Main';
 $route['404_override'] = '';
 
 $route['pages/register'] = 'registration/register';
-$route['pages/login'] = 'registration/register';
+$route['pages/login'] = 'registration/login';
 $route['pages/main'] = 'main/index';
+$route['swap/(:num)'] = 'main/fullView/$1';
 
 $route['translate_uri_dashes'] = FALSE;

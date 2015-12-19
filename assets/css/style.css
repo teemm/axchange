@@ -19,6 +19,15 @@
 body{
 	background: #EFEEEE;
 }
+.cls{
+	clear: all;
+}
+.nopadding{
+	padding:0 !important;
+}
+.nomargin{
+	margin: 0 !important;
+}
 .transition{
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
@@ -125,7 +134,7 @@ body{
 	background: #fff;
 }
 .leftMenu{
-	margin-top: 100px;
+	margin-top: 30px;
 	position: relative;
 	margin-left: 20px
 }
@@ -253,6 +262,7 @@ section > div > ul > li{
     display: inline-block;
     margin-left: 2%;
     height: 100%;
+    width: 100%;
 }
 .vipsImage{
 	width: 100%;
@@ -260,12 +270,13 @@ section > div > ul > li{
 	margin-top: 10%;
 }
 .vipTitle{
-	font-size: 18px;
+	font-size: 14px;
 	font-family: 'bpg_arial';
 }
 .vipPar{
 	font-size: 15px;
 	color: #f39c12;
+	height: 44px;
 }
 .new-cl{
 	margin-top: 10px;
@@ -277,14 +288,18 @@ section > div > ul > li{
 	display: inline-block;
 	margin-left: 2%;
 	margin-top: 5%;
-
+	width: 100%;
 }
 .newTitle{
-	font-size: 16px;
+	font-size: 14px;
 	font-family: 'bpg_arial';
+	max-height: 50px;
+	overflow: hidden;
 }
 .rightContent{
 	height: 100%;
+	margin: 0 0 20px 0;
+	padding: 10px;
 }
 .rightContent .formblock{
 	height: 474px;
@@ -339,7 +354,8 @@ section > div > ul > li{
 }
 .inline1{
 	display: inline-block;
-    width: 21%;
+    width: 150px;
+    vertical-align: top;
     margin: 10px;
 }
 .vipimg{
@@ -379,4 +395,59 @@ section > div > ul > li{
 	position: absolute;
 	width: 100px;
 	height: 100px;
+}
+.btnBlock{
+	margin: 10px 0 0 25px;
+}
+.swapDesc{
+	width:380px;
+}
+.swapDesc .imgswap img{
+	width: 380px;
+}
+.fullview,.swapInfo{
+	display: inline-block;
+	vertical-align: top;
+}
+.swapinfoLists{
+	margin: 10px 0 0 15px;
+	width: 340px;
+}
+.swapinfoLists li{
+	margin: 15px 0;
+}
+.swapinfoLists li strong.infotitle{
+	color: #f39c12;
+}
+.footerpanel .moreImage{
+	overflow: hidden;
+}
+.footerpanel .moreImage .smallpic{
+	padding:10px 5px; 
+	width: 100px;
+	float: left;
+}
+.footerpanel .moreImage .smallpic img{
+	width: 100px;
+}
+.footerpanel .moreImage{
+	width: 50%;
+	display: inline-block;
+}
+.footerpanel .offer{
+	display: inline-block;
+	width: 290px;
+	height: 50px;
+	background: #4480b0;
+	text-align: center;
+	line-height: 50px;
+	color:#fff;
+	font: 24px 'bpg_arial',sans-serif;
+	padding: 6px 0;
+	cursor: pointer;
+	vertical-align: top;
+	margin: 15px 0 0 15px;
+}
+.footerpanel .offer:hover{
+	background: #4D98D5;
 }
