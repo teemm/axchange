@@ -45,31 +45,7 @@ class Main extends CI_Controller {
 		$this->load->view('footer');			
 	}
 	public function addnewss(){
-			$config['upload_path']          = './uploads/';
-	        $config['allowed_types']        = 'gif|jpg|png';
-	        $config['max_size']             = 20000;
-	        // $config['max_width']            = 1024;
-	        // $config['max_height']           = 768;
-
-			$this->load->library('upload', $config);
-			$imageName = '';
-
-			 if ( ! $this->upload->do_upload('imageName'))
-                {
-                        $error = array('error' => $this->upload->display_errors());
-
-                        // $this->load->view('upload_form', $error);
-                        print_r($error);
-                }
-                else
-                {
-                        $data = array('upload_data' => $this->upload->data());
-                        $imageName = $data['upload_data']['file_name'];
-                        // $this->load->view('upload_success', $data);
-                        print_r($data);
-                }
-                $this->load->model('Addnews');
-				$data['Addnews'] = $this->Addnews->UploadPhoto($imageName);
-				$this->Addnews->Addnews();
+        $this->load->model('Addnews');
+		$this->Addnews->Addnews();
 	}
 }

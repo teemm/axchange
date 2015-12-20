@@ -2,7 +2,7 @@
     <div class="content-r">
   		<div class="addNews">
   			<h2>ახალი განცხადება</h2>
-  			<form action="<?php echo site_url('main/addnewss'); ?>" method="post" class="addnewsform">
+  			<form action="<?php echo site_url('main/addnewss'); ?>" method="POST" class="addnewsform" enctype="multipart/form-data">
   				<p><input type="text" name="nameofitem" placeholder="ნივთის სახელი"/></p>
   				<p>
 					<select name="status">
@@ -33,7 +33,7 @@
           </p>
           <p>აირჩიეთ ფოტო:</p>
           <p>
-            <input type="file" accept="image/*" onchange="loadFile(event)" name="imageName">
+            <input type="file" accept="image/*" onchange="loadFile(event)" name="imagesname">
               <img style="width:300px;" id="output"/>
               <script>
                 var loadFile = function(event) {

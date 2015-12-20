@@ -67,15 +67,8 @@
                     
                 </p>
                 <p>
-<<<<<<< HEAD
-
-                    <input type="file" id="imgInp" onchange="loadFile(event)" name="imagesName"/>
-                    <input type="hidden" value="<?php echo $this->uri->segment(2); ?>" name="adressid" />
-
-=======
                     <input type="hidden" value="<?php echo $this->uri->segment(2); ?>" name="adressid" />
                     <input type="file" accept="image/*" onchange="loadFile(event)" name="imagesname"/>
->>>>>>> ee6da46aae9368da4e0b9e713900386e56c1cd63
                 </p>
                 <p>
                 </p>

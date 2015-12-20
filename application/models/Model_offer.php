@@ -27,7 +27,7 @@ class Model_offer extends CI_Model{
 				move_uploaded_file($file_temp_name,$filename);
 			}
 		}
-
+		
 		$adressid=$this->db->where('id',$this->input->post('adressid',TRUE))->get('swaps')->row_array()['autor'];
 		$data=array(
 			'autor'=>$this->session->userSwap,
