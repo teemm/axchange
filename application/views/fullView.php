@@ -25,6 +25,9 @@
     		<?php endif; ?>
     	</div>
     	<div class="offer transition"><span>შესთავაზე</span></div>
+       <?php if($this->session->has_userdata('successAdd')): ?>
+        <p class="sendoffer">წარმატებით გაიგზავნა შემოთავაზება</p>
+       <?php endif; ?>
     </div>
     <div class="offerhidden">
         <p class="centerButtons">
@@ -42,7 +45,7 @@
             <button class="thisOffer"> არსებულის შეთავაზება </button> -->
         </p>
         <div class="new-of">
-            <form action="<?php echo site_url('Offer/addoffer'); ?>" method="POST" id="form1" enctype="multipart/form-data" >
+            <form action="<?php echo site_url('Offer/addoffer/'.$this->uri->segment(2)); ?>" method="POST" id="form1" enctype="multipart/form-data" >
                     <h2> შექმენით ახალი შეთავაზება </h2>
                 <p>
                     <label for="">ნივთის დასახელება:</label> 
@@ -64,12 +67,8 @@
                     
                 </p>
                 <p>
-<<<<<<< HEAD
-                    <input type="file" id="imgInp" onchange="loadFile(event)" name="imagesName"/>
                     <input type="hidden" value="<?php echo $this->uri->segment(2); ?>" name="adressid" />
-=======
-                    <input type="file" accept="image/*" onchange="loadFile(event)"/>
->>>>>>> 9115421fe11a9d66e30e170e27b8fdffa9bfd2dc
+                    <input type="file" accept="image/*" onchange="loadFile(event)" name="imagesname"/>
                 </p>
                 <p>
                 </p>
@@ -80,7 +79,6 @@
                 </p>
             </form>
         </div>
-
         <div class="my-of">
             <form action="" method="POST">
             <h2> შესთავაზე უკვე არსებული </h2>
@@ -101,7 +99,6 @@
     </div>
   </div>  
 </section>
-<input type="file" >
 <img id="output"/>
 <script>
   var loadFile = function(event) {
