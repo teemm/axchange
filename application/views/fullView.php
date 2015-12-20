@@ -43,6 +43,7 @@
         </p>
         <div class="new-of">
             <form action="" method="POST" id="form1">
+                    <h2> შექმენით ახალი შეთავაზება </h2>
                 <p>
                     <label for="">ნივთის დასახელება:</label> 
                 </p>
@@ -78,6 +79,7 @@
 
         <div class="my-of">
             <form action="" method="POST">
+            <h2> შესთავაზე უკვე არსებული </h2>
                 <p> 
                     <label for="">მდგომარეობა:</label>
                 </p>
@@ -93,78 +95,8 @@
             </form>
         </div>
     </div>
-
-
-
-                                    
-                                   <div>
-                                    <form action="" method="POST">
-                                        <input class="comminput" name="coment" type="text" placeholder="კომენტარის დამატება">
-                                        
-                                        <button class="btn btn-primary">გაგზავნა</button>
-                                    </form>
-                                </div>
-
-
-                                <section class="comments">
-                               
-                                  <article class="comment">
-                                  <a class="comment-img" href="<?php echo base_url('assets/images/users/user.png'); ?>">
-                                    <img src="" alt="" width="50" height="50">
-                                  </a>
-                                  <div class="comment-body">
-                                    <div class="text">
-                                      sadsadasdass
-                                    </div>
-                                    <p class="attribution">by temo at 20th</p>
-                                  </div>
-
-                                </article>
-
-                                  <article class="comment">
-                                  <a class="comment-img" href="<?php echo base_url('assets/images/users/user.png'); ?>">
-                                    <img src="" alt="" width="50" height="50">
-                                  </a>
-                                  <div class="comment-body">
-                                    <div class="text">
-                                      sadsadasdass
-                                    </div>
-                                    <p class="attribution">by temo at 20th</p>
-                                  </div>
-                                  
-                                </article>
-                                
-                            </section>​
-
-
-
-
-    <div class="notifications">
-    	<p class="comment">კომენტარები</p>
-    	<ul class="commentLists">
-    		<li>
-    			<p><span>თემო ფხალაძე</span></p>
-    			<p><span>კომენტარის ტექსი</span></p>
-    		</li>
-    	</ul>
-    </div>
-
-
-
   </div>  
-
-
-
-
-
-
 </section>
-
-
-
-
-
-
 <script>
  function readURL(input) {
         for(var i =0; i< input.files.length; i++){
@@ -185,16 +117,17 @@
         readURL(this);
     });
 </script>
+
 <script>
     $(document).ready(function(){
     $("#new").click(function(){
-        $(".new-of").removeClass('my-of').toggle("slow");
+        $(".new-of").toggle("slow");
     });
     $('#this').click(function(){
-     $('.my-of').removeClass('new-of').toggle('slow');
+     $('.my-of').toggle('slow');
     });
-    $('.offer').click(function(){
-     $('.offerhidden').removeClass('new-of').toggle('slow');
+     $('.offer').click(function(){
+     $('.offerhidden').toggle('slow');
     });
 });
 </script>
