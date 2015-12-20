@@ -56,5 +56,10 @@ $route['pages/register'] = 'registration/register';
 $route['pages/login'] = 'registration/login';
 $route['pages/main'] = 'main/index';
 $route['swap/(:num)'] = 'main/fullView/$1';
+$route['subcat/(:num)'] = 'filter/seachSubcat/$1';
+$route['cat/(:num)'] = 'filter/saechcategories/$1';
+$route['pages/news'] = 'main/addnews';
+$route['myprofile'] = 'main/myprofile';
+
 
 $route['translate_uri_dashes'] = FALSE;
