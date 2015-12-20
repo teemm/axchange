@@ -19,6 +19,12 @@
 body{
 	background: #EFEEEE;
 }
+.logo{
+	    position: absolute;
+    top: 0;
+    width: 115px;
+    margin-left: 106px;
+}
 .cls{
 	clear: all;
 }

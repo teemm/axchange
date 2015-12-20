@@ -64,12 +64,16 @@
                     
                 </p>
                 <p>
+<<<<<<< HEAD
                     <input type="file" id="imgInp" onchange="loadFile(event)" name="imagesName"/>
                     <input type="hidden" value="<?php echo $this->uri->segment(2); ?>" name="adressid" />
+=======
+                    <input type="file" accept="image/*" onchange="loadFile(event)"/>
+>>>>>>> 9115421fe11a9d66e30e170e27b8fdffa9bfd2dc
                 </p>
                 <p>
                 </p>
-                    <img style="width:100px;"/>
+                    <img style="width:300px;" id="output"/>
                 </p>
                 <p>
                     <button> შეთავაზების გაგზავნა </button>
@@ -97,25 +101,13 @@
     </div>
   </div>  
 </section>
+<input type="file" >
+<img id="output"/>
 <script>
- function readURL(input) {
-        for(var i =0; i< input.files.length; i++){
-        if (input.files[i]) {
-            var reader = new FileReader();
-
-            reader.onload = function (e) {
-               var img = $('<img id="dynamic">');
-               img.attr('src', e.target.result);
-               img.appendTo('#form1');  
-            }
-            reader.readAsDataURL(input.files[i]);
-           }
-        }
-    }
-
-    $("#imgInp").change(function(){
-        readURL(this);
-    });
+  var loadFile = function(event) {
+    var output = document.getElementById('output');
+    output.src = URL.createObjectURL(event.target.files[0]);
+  };
 </script>
 
 <script>
