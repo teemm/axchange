@@ -438,7 +438,7 @@ section > div > ul > li{
 	display: inline-block;
 	width: 290px;
 	height: 50px;
-	background: #4480b0;
+	background: #4D98D5;
 	text-align: center;
 	line-height: 50px;
 	color:#fff;
@@ -449,5 +449,175 @@ section > div > ul > li{
 	margin: 15px 0 0 15px;
 }
 .footerpanel .offer:hover{
-	background: #4D98D5;
+	background: #4480b0;
+}
+.offerhidden{
+	display: inline-block;
+    width: 100%;
+    display: none;
+}
+.centerButtons{
+	text-align: center;
+}
+.offerhidden .centerButtons button {
+	width: 200px;
+	height: 50px;
+	background: blue;
+	font-family: 'bpg_arial',sans-serif;
+	font-size: 16px;
+	color: #fff;
+}
+.new-of{
+	text-align: center;
+	display: none;
+}
+.new-of form p{
+
+}
+.new-of form p input{
+	width: 300px;
+	height: 40px;
+	font-family: 'bpg_arial',sans-serif;
+}
+.new-of form p select{
+	width: 300px;
+	height: 40px;
+	font-family: 'bpg_arial',sans-serif;
+}
+.new-of form p select option{
+	width: 300px;
+	height: 40px;
+	font-family: 'bpg_arial',sans-serif;
+}
+.new-of form p input[type=file]{
+	display: inline-block !important;
+	font-family: 'bpg_arial',sans-serif;
+}
+.new-of form p button{
+	width: 300px;
+	height: 40px;
+	background: black;
+	font-family: 'bpg_arial',sans-serif;
+	color: #fff;
+}
+.my-of{
+	text-align: center;
+	display: none;
+}
+.my-of.my-of form p select{
+	width: 300px;
+	height: 40px;
+	font-family: 'bpg_arial',sans-serif;
+}
+.my-of form p select option{
+	width: 300px;
+	height: 40px;
+	font-family: 'bpg_arial',sans-serif;
+}
+.my-of form p button{
+	width: 300px;
+	height: 40px;
+	background: black;
+	font-family: 'bpg_arial',sans-serif;
+	color: #fff;
+}
+
+
+.comment {
+    overflow: hidden;
+    padding: 0 0 1em;
+    border-bottom: 1px solid #ddd;
+    margin: 18px 0 1em;
+    zoom: 1;
+}
+
+.comment-img {
+    float: left;
+    margin-right: 33px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.comment-img img {
+    display: block;
+}
+
+.comment-body {
+    overflow: hidden;
+}
+
+.comment .text {
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.comment .text p:last-child {
+    margin: 0;
+}
+
+.comment .attribution {
+    margin: 0.5em 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Decoration */
+
+.comments,
+.comment {
+    position: relative;
+}
+
+.comments:before,
+.comment:before,
+.comment .text:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 65px;
+}
+
+.comments:before {
+    width: 3px;
+    top: -20px;
+    bottom: -20px;
+    background: rgba(0,0,0,0.1);
+}
+
+.comment:before {
+    width: 9px;
+    height: 9px;
+    border: 3px solid #fff;
+    border-radius: 100px;
+    margin: 16px 0 0 -6px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2), inset 0 1px 1px rgba(0,0,0,0.1);
+    background: #ccc;
+}
+
+.comment:hover:before {
+    background: orange;
+}
+
+.comment .text:before {
+    top: 18px;
+    left: 78px;
+    width: 9px;
+    height: 9px;
+    border-width: 0 0 1px 1px;
+    border-style: solid;
+    border-color: #e5e5e5;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}​
+.comminput{
+	width: 80%;
+    height: 36px;
+    /* float: right; */
+    margin-left: 66px;
+    margin-bottom: 28px;
 }
