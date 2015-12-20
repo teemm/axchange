@@ -122,12 +122,15 @@
     $(document).ready(function(){
     $("#new").click(function(){
         $(".new-of").toggle("slow");
+        $('.my-of').hide('slow');
     });
     $('#this').click(function(){
      $('.my-of').toggle('slow');
+     $('.new-of').hide('slow');
     });
      $('.offer').click(function(){
      $('.offerhidden').toggle('slow');
+
     });
 });
 </script>
