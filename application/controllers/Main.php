@@ -33,4 +33,14 @@ class Main extends CI_Controller {
 		$this->load->view('fullView'); 
 		$this->load->view('footer');		
 	}
+	public function addnews(){
+		$this->load->model('Welcome');
+		$data['menus']=$this->Welcome->menu();
+		$data['categories']=$this->Welcome->categories();
+		$this->load->view('header',$data);
+		$this->load->view('navbar');
+		$this->load->view('categories');
+		$this->load->view('addnews'); 
+		$this->load->view('footer');			
+	}
 }

@@ -18,7 +18,7 @@
               <button class="dropdown-toggle md-select" type="button" data-toggle="dropdown"><span class="circle"></span>ჩემი პროფილი
               <span class="caret"></span></button>
               <ul class="dropdown-menu">
-                <li><a href="<?php echo base_url('myprofile'); ?>">ჩემი პროფილი</a></li>
+                <li><a href="<?php echo base_url('myprofile/profile'); ?>">ჩემი პროფილი</a></li>
                 <li><a href="<?php echo base_url('Registration/logout') ?>">გამოსვლა</a></li>
               </ul>
             </li>
