@@ -379,6 +379,7 @@ section > div > ul > li{
 	/*border: 1px solid gray;*/
 	outline: 1px solid #E1E1E1;
 	line-height: 220px;
+	overflow: hidden;
 }
 .fix1{
 	position: relative;
@@ -387,6 +388,7 @@ section > div > ul > li{
 	/*border: 1px solid gray;*/
 	outline: 1px solid #E1E1E1;
 	line-height: 150px;
+	    overflow: hidden;
 }
 .hoverNews{
 	position: absolute;
