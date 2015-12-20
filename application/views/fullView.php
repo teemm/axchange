@@ -64,12 +64,10 @@
                     
                 </p>
                 <p>
-<<<<<<< HEAD
+
                     <input type="file" id="imgInp" onchange="loadFile(event)" name="imagesName"/>
                     <input type="hidden" value="<?php echo $this->uri->segment(2); ?>" name="adressid" />
-=======
-                    <input type="file" accept="image/*" onchange="loadFile(event)"/>
->>>>>>> 9115421fe11a9d66e30e170e27b8fdffa9bfd2dc
+
                 </p>
                 <p>
                 </p>
