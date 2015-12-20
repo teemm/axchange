@@ -42,21 +42,21 @@
             <button class="thisOffer"> არსებულის შეთავაზება </button> -->
         </p>
         <div class="new-of">
-            <form action="" method="POST" id="form1">
+            <form action="<?php echo site_url('Offer/addoffer'); ?>" method="POST" id="form1" enctype="multipart/form-data" >
                     <h2> შექმენით ახალი შეთავაზება </h2>
                 <p>
                     <label for="">ნივთის დასახელება:</label> 
                 </p>
                 <p>
-                    <input type="text" placeholder="მიუთითეთ ნივთის დასახელება"/>
+                    <input type="text" placeholder="მიუთითეთ ნივთის დასახელება" name="titleitem"/>
                 </p>
                 <p> 
                     <label for="">მდგომარეობა:</label>
                 </p>
                 <p>
-                   <select name="" id="">
-                        <option value=""> ახალი </option>
-                        <option value=""> მეორადი </option>
+                   <select name="status" id="">
+                        <option value="ახალი"> ახალი </option>
+                        <option value="მეორადი"> მეორადი </option>
                     </select>
                 </p>
                 <p>
@@ -64,8 +64,8 @@
                     
                 </p>
                 <p>
-                    <input type="file" id="imgInp" onchange="loadFile(event)"/>
-                    
+                    <input type="file" id="imgInp" onchange="loadFile(event)" name="imagesName"/>
+                    <input type="hidden" value="<?php echo $this->uri->segment(2); ?>" name="adressid" />
                 </p>
                 <p>
                 </p>
