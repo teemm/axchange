@@ -1,13 +1,14 @@
 
 <nav class="navbar navbar-default">
-  <div class="container">
+  <div class="container forLogo">
    
-      <a class="navbar-brand" href="<?php echo base_url(''); ?>">
-        <img alt="Brand" src="<?php echo base_url('assets/images/svg/logo.svg'); ?>">
-      </a>
+      
     
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <a class="navbar-brand logoo" href="<?php echo base_url(''); ?>">
+        <img alt="Brand" class="logo" src="<?php echo base_url('assets/images/svg/logo.svg'); ?>">
+      </a>
       <ul class="nav navbar-nav navbar-right">
       <?php foreach ($menus as $list): ?>
           <?php if($this->session->userSwap && ($list['eng_name']=='register' || $list['eng_name']=='login'))continue; ?>
